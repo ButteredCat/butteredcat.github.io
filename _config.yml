@@ -1,11 +1,11 @@
 # Site wide configuration
 
-title: ButteredCat's Blog 
+title: 读书笔记 
 locale: zh_CN
-description: Describe your website here.
+description: 
 logo: site-logo.png
 search: true
-url: http://localhost:4000
+#url: http://localhost:4000
 url: https://butteredcat.github.io
 
 # Jekyll configuration
@@ -39,7 +39,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 owner:
   name: ButteredCat 
   avatar: bio-photo.jpg
-  email: you@email.com
+  email: i@butteredcat.org 
   disqus-shortname:
   twitter: #username
   facebook: #username
