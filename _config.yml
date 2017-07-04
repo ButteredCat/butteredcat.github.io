@@ -38,9 +38,9 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: ButteredCat 
-  avatar: bio-photo.jpg
+  avatar: butteredcat.jpg
   email: i@butteredcat.org 
-  disqus-shortname:
+  disqus-shortname: xiaoyc
   twitter: #username
   facebook: #username
   github: butteredcat 
