@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Python 装饰器详解 
+title: Python 装饰器语法详解 
 excerpt: "本文提供了将装饰器转化成高阶函数表达的一种范式，根据这一范式，可以直接推导出四种装饰器的写法。"
 categories: articles
-tags: [python]
+tags: [Python]
 comments: true
 share: true
 ---

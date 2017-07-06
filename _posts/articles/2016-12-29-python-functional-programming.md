@@ -4,7 +4,7 @@ title: Python 对函数式编程的支持
 excerpt: "Python 对函数式编程中的一些概念，如匿名函数、柯里化、偏函数、尾递归、惰性求值的支持情况"
 modified: 2017-07-04
 categories: articles
-tags: [python]
+tags: [Python]
 comments: true
 share: true
 ---
