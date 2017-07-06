@@ -2,7 +2,7 @@
 layout: post
 title: 利用图书馆远程登录服务访问知网
 excerpt: "通过 VPN 访问图书馆购买的各种数据库资源"
-modified: 2017-07-04
+modified: 2017-07-06
 categories: articles
 tags: []
 comments: true
