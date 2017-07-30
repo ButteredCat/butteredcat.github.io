@@ -2,7 +2,7 @@
 layout: post
 title: 闭包与自由变量
 excerpt: "闭包简介，以及修改闭包外部自由变量的几种方法"
-modified: 2017-07-14
+modified: 2017-07-30
 categories: articles
 tags: [Python]
 comments: true
