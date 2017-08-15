@@ -120,3 +120,10 @@ umount /dev/sdb3
 完成！
 
 从制作完成的U盘启动，选择进入 *Live USB Persistence* ，创建的修改就都会被保存在U盘上了。
+
+
+
+## 参考资料：
+
+* [Making a Kali Bootable USB Drive](https://docs.kali.org/downloading/kali-linux-live-usb-install)
+* [Kali Linux Live USB Persistence](https://docs.kali.org/downloading/kali-linux-live-usb-persistence)
