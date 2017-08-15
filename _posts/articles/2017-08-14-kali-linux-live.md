@@ -51,7 +51,7 @@ Windows 上还需要第三方工具 Win32 Disk Imager，Linux/macOS 只要 `dd` 
 diskutil unmountDisk /dev/diskN
 ```
 
-为了防止有人直接复制命令，我用 `diskN` 来指代设备， `diskN` 不是正常的设备名，万一执行了也会因为找不到设备而退出。使用时应该把 `N` 替换成U盘设备实际对应的数字。
+为了防止有人直接复制命令酿成惨剧，我用 `diskN` 来指代设备， `diskN` 不是正常的设备名，万一执行了也会因为找不到设备而退出。使用时应该把 `N` 替换成U盘设备实际对应的数字。
 
 然后就是写入。`cd` 到 ISO 文件所在目录，
 
@@ -63,7 +63,7 @@ dd if=kali-linux-2017.1-amd64.iso of=/dev/diskN bs=1m
 
 其中 `bs` 是一次读写的字节数上限。Linux 建议设置为 `bs=512k`。如果 macOS 出现 *Invalid number '1m'* 的提示，那你可能用的是 GNU 版本的 `dd`， 改成 `bs=1M` 即可。
 
-macOS 上可以把设备名称从 `/dev/diskN` 改为 `/dev/rdiskN` （其中 *r* 代表 *raw*），可以显著提高写入速度。
+macOS 上把设备名称从 `/dev/diskN` 改为 `/dev/rdiskN` （其中 *r* 代表 *raw*），可以显著提高写入速度。
 
 然后就是漫长的、无响应的阻塞和等待。直到出现类似下面的提示时，U盘系统就制作完成了。
 
@@ -79,7 +79,7 @@ macOS 上可以把设备名称从 `/dev/diskN` 改为 `/dev/rdiskN` （其中 *r
 
 但是这时的 Live 系统还不支持持久化。
 
-Kali 的持久化是直接在U盘上开辟分区的，大小仅受U盘容量限制，还支持加密。持久化操作应当在 Linux 上进行，其他系统不方便建立 **ext3** 文件系统。我是在 ubuntu Live 上操作的，似乎直接在刚才建立的 Kali Live 上操作也可以。
+Kali 的持久化是直接在U盘上开辟分区的，大小仅受U盘容量限制，还支持加密。持久化操作应当在 Linux 上进行，因为其他系统不方便建立 **ext3** 文件系统。我是在 ubuntu Live 上操作的，这样总共就需要 2 块U盘，似乎直接在刚才建立的 Kali Live 系统上操作也可行。
 
 为了便于说明，我们作如下假设：
 
@@ -87,7 +87,7 @@ Kali 的持久化是直接在U盘上开辟分区的，大小仅受U盘容量限�
 * U盘的设备名为 `/dev/sdb`，
 * U盘容量为 **8GB**。
 
-先用 `fdisk -l` 检查查看一下U盘，你应该能看到 2 个分区，`/dev/sdb1` 和 `/dev/sdb2`，我们将要创建的是 `/dev/sdb3`。
+先用 `fdisk -l` 检查查看一下U盘，应该能看到 2 个分区，`/dev/sdb1` 和 `/dev/sdb2`，我们将要创建的是 `/dev/sdb3`。
 
 然后用 `parted` 划分分区：
 
@@ -119,9 +119,7 @@ umount /dev/sdb3
 
 完成！
 
-从制作完成的U盘启动，选择进入 *Live USB Persistence* ，创建的修改就都会被保存在U盘上了。
-
-
+使用的时候，PC 在 BIOS 里选择从U盘启动，Mac 按住 **Option** 启动即可。选择进入 *Live USB Persistence* ，创建的修改就都会被保存在U盘上了。
 
 ## 参考资料：
 
