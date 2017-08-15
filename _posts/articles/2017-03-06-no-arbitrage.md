@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 无套利定价理论
-excerpt: "Financial Engineering and Risk Management I》课堂笔记"
+excerpt: "Financial Engineering and Risk Management I 课堂笔记"
 modified: 2017-07-06
 categories: articles
 tags: [financial-engineering]
